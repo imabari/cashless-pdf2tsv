@@ -40,3 +40,13 @@ java -jar tabula-0.9.0-jar-with-dependencies.jar -f TSV -o tabula090.tsv -r -p 3
 + tabula103.tsv
 
 java -jar tabula-1.0.3-jar-with-dependencies.jar -f TSV -o tabula103.tsv -l -p 3-6360 %1
+
+# tabulaについて
+
++ tabula0.9.0までは文字変換なし
++ 0.9.1以降は全角英数字記号を半角、半角カナを全角、機種依存文字を変更　例Ⅰ→I、Ⅱ→II、①→1、℃→゜C等
++ 罫線をオーバーしたものや文字が重なっているところはカットされる
+  + 0821-pdfbox.tsv
+  + 0821-tabula090.tsv
+
+zaimの変換結果を見ているとtabulaで一括変換後、?部分を手動で訂正してる？
